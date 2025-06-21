@@ -13,9 +13,34 @@
         #two {
             background: url('images/DiamondV.png') center/cover no-repeat;
         }
+        /* Fondo para sección tres */
+        #three.social-bg {
+            background: url('images/tercera.webp') center/cover no-repeat;
+            position: relative;
+        }
+        #three.social-bg:before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1;
+        }
+        #three.social-bg > .inner {
+            position: relative;
+            z-index: 2;
+        }
+        #three .icons a {
+            color: #fff;
+            font-size: 2em;
+            margin: 0 0.5em;
+            transition: color 0.2s;
+        }
+        #three .icons a:hover {
+            color: var(--gold, #d4af37);
+        }
         /* Submenu styles */
         #menu .has-submenu > a { cursor: pointer; }
-        #menu .submenu { background: #fff; padding-left: 1em; border-left: 2px solid #8a4680; margin: 0.5em 0; }
+        #menu .submenu { background: #fff; padding-left: 1em; border-left: 2px solidrgb(70, 138, 115); margin: 0.5em 0; }
         #menu .submenu li a { color: #8a4680; font-size: 0.95em; padding: 0.3em 0; display: block; }
         #menu .submenu li a:hover { text-decoration: underline; }
 
@@ -118,31 +143,24 @@
     </section>
 
     <!-- Sección de formulario -->
-    <section id="three" class="wrapper style2">
+    <section id="three" class="wrapper style2 social-bg">
         <div class="inner">
-            <header class="align-center"><p>Contacto</p><h2>Envíanos un mensaje</h2></header>
-            <form action="submit_form.php" method="post" class="contact-form">
-                <div class="field half"><label for="name">Nombre</label><input type="text" name="name" id="name" placeholder="Tu nombre" required></div>
-                <div class="field half"><label for="email">Correo electrónico</label><input type="email" name="email" id="email" placeholder="Tu correo" required></div>
-                <div class="field"><label for="message">Mensaje</label><textarea name="message" id="message" placeholder="Tu mensaje" rows="6" required></textarea></div>
-                <ul class="actions"><li><input type="submit" value="Enviar mensaje" class="button special"></li></ul>
-            </form>
+            <header class="align-center"><p>Contacto</p><h2>Síguenos en redes sociales</h2></header>
+            <ul class="icons align-center" style="margin-top:2em;">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
-            <ul class="icons">
-                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-            </ul>
-            <p style="margin-top:1em;font-size:0.9em;"><a href="aviso-privacidad.html" style="color:#8a4680;">Aviso de privacidad</a></p>
         </div>
     </footer>
-    <div class="copyright">Made by <a href="index.html">ONE Elevate Digital</a>.</div>
+    <div class="copyright">Made by <a href="https://cesarpinha.github.io/ONE-Elevate/">Pinha's AI Solutions</a>.</div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
