@@ -4534,3 +4534,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.logo a {
+  font-family: 'PT Serif', serif;
+  text-transform: uppercase;
+}
