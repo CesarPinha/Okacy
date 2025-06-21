@@ -382,7 +382,7 @@ var settings = {
 		const chatWidget = $(`
 			<div id="ai-chat-widget">
 				<div id="ai-chat-header">
-					<span>Asistente AI</span>
+					<span>MoneyTalk</span>
 					<button id="ai-chat-close" title="Cerrar">&times;</button>
 				</div>
 				<div id="ai-chat-messages"></div>
@@ -407,11 +407,12 @@ var settings = {
 
 		// Mensaje de bienvenida y opciones iniciales
 		function aiWelcome() {
-			aiAddMessage('assistant', '¡Hola! Soy tu asistente AI de ONE Elevate Digital. ¿En qué puedo ayudarte hoy? Elige una opción o escribe tu pregunta:', [
-				'Ver servicios',
-				'Cotización personalizada',
-				'Hablar con un asesor',
-				'Consejos de AI para mi negocio'
+			aiAddMessage('assistant', '👋 ¡Hola! Soy MoneyTalk, tu asistente musical. ¿En qué puedo ayudarte hoy?', [
+				'🔊 Recomendaciones de canciones',
+				'🎟 Próximos eventos',
+				'👕 Merch y promociones',
+				'📩 Suscribirme al newsletter',
+				'❓ Preguntas frecuentes'
 			]);
 		}
 
