@@ -4531,5 +4531,6 @@
 }
 
 
-
-
+html {
+  scroll-behavior: smooth;
+}
