@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <title>Okacy Records</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Background for section two */
+        #two {
+            background: url('images/DiamondV.png') center/cover no-repeat;
+        }
+        /* Submenu styles */
+        #menu .has-submenu > a { cursor: pointer; }
+        #menu .submenu { background: #fff; padding-left: 1em; border-left: 2px solid #8a4680; margin: 0.5em 0; }
+        #menu .submenu li a { color: #8a4680; font-size: 0.95em; padding: 0.3em 0; display: block; }
+        #menu .submenu li a:hover { text-decoration: underline; }
+
+        /* Video gallery styles */
+        .video-gallery { display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; }
+        .video-item { width: 30%; cursor: pointer; }
+        .video-container { position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; background: #000; }
+        .video-container img.thumb {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+        }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .play-button { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3em; color: rgba(255,255,255,0.8); pointer-events: none; }
+
+        /* Contact form styles */
+        .contact-form .field { margin-bottom: 1em; }
+        .contact-form .field.half { width: 48%; display: inline-block; vertical-align: top; }
+        .contact-form .actions { list-style: none; padding: 0; }
+        .contact-form .actions li { display: inline; margin-right: 1em; }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="index.html">Honey Money Company <span>by Okacy</span></a></div>
+        <a href="#menu">Menu</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mantenimiento.html">Merch</a></li>
+            <li><a href="generic.html">Escucha ahora</a></li>
+            <li><a href="generic.html">Suscríbete</a></li>
+            <li class="has-submenu">
+                <a href="#" id="servicios-toggle">Contacto <i class="fa fa-caret-down"></i></a>
+                <ul class="submenu" id="servicios-submenu" style="display:none;">
+                    <li><a href="#">Mis redes sociales</a></li>
+                    <li><a href="#">Presentaciones</a></li>
+                    <li><a href="#">Contratación eventos VIP</a></li>
+                    <li><a href="#">Colaboraciones</a></li>
+                    <li><a href="#">Fechas oficiales</a></li>
+                    <li><a href="mantenimiento.html">Galería</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner full">
+        <article>
+            <img src="images/HoneyMoneyEdit1.png" alt="Banner principal" width="1440" height="961">
+            <div class="inner">
+                <header>
+                    <p>Diseños que capturan atención <a href="https://cesarpinha.github.io/ONE-Elevate/index.html">y venden más</a></p>
+                    <h2>Impacto Visual</h2>
+                </header>
+            </div>
+        </article>
+    </section>
+
+    <!-- Lo más escuchado con videos -->
+    <section id="two" class="wrapper style3">
+        <div class="inner">
+            <header class="align-center">
+                <p>Honey Money Presents:</p>
+                <h2>Lo más escuchado</h2>
+            </header>
+            <header class="align-center">
+                <h2>Escúchame en tu reproductor favorito</h2>
+            </header>
+            <div class="video-gallery">
+                <div class="video-item" data-video-id="56wZGmyU7Iw">
+                    <div class="video-container">
+                        <img class="thumb" src="https://img.youtube.com/vi/56wZGmyU7Iw/hqdefault.jpg" alt="Thumb 1">
+                        <div class="play-button"><i class="fa fa-play-circle"></i></div>
+                    </div>
+                    <header class="align-center gallery-title"><h3>Diamante</h3></header>
+                    <p></p>
+                </div>
+                <div class="video-item" data-video-id="nM-97qqXvz0">
+                    <div class="video-container">
+                        <img class="thumb" src="https://img.youtube.com/vi/nM-97qqXvz0/hqdefault.jpg" alt="Thumb 2">
+                        <div class="play-button"><i class="fa fa-play-circle"></i></div>
+                    </div>
+                    <header class="align-center gallery-title"><h3>Que arda en llamas</h3></header>
+                    <p></p>
+                </div>
+                <div class="video-item" data-video-id="XDuu2bV_I9E">
+                    <div class="video-container">
+                        <img class="thumb" src="https://img.youtube.com/vi/XDuu2bV_I9E/hqdefault.jpg" alt="Thumb 3">
+                        <div class="play-button"><i class="fa fa-play-circle"></i></div>
+                    </div>
+                    <header class="align-center gallery-title"><h3>Pensando</h3></header>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de formulario -->
+    <section id="three" class="wrapper style2">
+        <div class="inner">
+            <header class="align-center"><p>Contacto</p><h2>Envíanos un mensaje</h2></header>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <div class="field half"><label for="name">Nombre</label><input type="text" name="name" id="name" placeholder="Tu nombre" required></div>
+                <div class="field half"><label for="email">Correo electrónico</label><input type="email" name="email" id="email" placeholder="Tu correo" required></div>
+                <div class="field"><label for="message">Mensaje</label><textarea name="message" id="message" placeholder="Tu mensaje" rows="6" required></textarea></div>
+                <ul class="actions"><li><input type="submit" value="Enviar mensaje" class="button special"></li></ul>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+            <p style="margin-top:1em;font-size:0.9em;"><a href="aviso-privacidad.html" style="color:#8a4680;">Aviso de privacidad</a></p>
+        </div>
+    </footer>
+    <div class="copyright">Made by <a href="index.html">ONE Elevate Digital</a>.</div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Toggle submenu
+            const toggle = document.getElementById('servicios-toggle');
+            const submenu = document.getElementById('servicios-submenu');
+            toggle && submenu && toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+            });
+            // Video embed on click
+            document.querySelectorAll('.video-item').forEach(function (item) {
+                item.addEventListener('click', function () {
+                    const videoId = this.getAttribute('data-video-id');
+                    const container = this.querySelector('.video-container');
+                    const iframe = document.createElement('iframe');
+                    iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+                    iframe.setAttribute('frameborder', '0');
+                    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                    iframe.setAttribute('allowfullscreen', '');
+                    container.innerHTML = '';
+                    container.appendChild(iframe);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
